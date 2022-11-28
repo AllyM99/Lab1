@@ -92,8 +92,14 @@ class HeapPriorityQueueTest {
     void testGetFrontNonEmptyQueue() {
         assertEquals(nonEmptyQueue.getFront(), 5);
     }
-
-
+    @Test
+    void testToStringEmptyQueue() {
+        assertEquals("", emptyQueue.toString());
+    }
+    @Test
+    void testToStringNonEmptyQueue() {
+        assertEquals("5 3 4", nonEmptyQueue.toString());
+    }
 
 
 }

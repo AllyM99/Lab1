@@ -11,7 +11,7 @@ public class HeapPriorityQueue<T extends Comparable<? super T>> implements Prior
 
     private T[] heap;
     private int size;
-    private int maxSize;
+    private final int maxSize;
 
     public HeapPriorityQueue(int maxSize) {
         this.maxSize = maxSize;
